@@ -1,71 +1,128 @@
-.parallax {
-  background-image: url("image.png");
-  min-height: 500px; 
-  background-attachment: fixed;
-  background-position: center;
+*{padding: 0; margin: 0; box-sizing: border-box;}
 
+/* bg image*/
+body{height: 900px;
+  background-image: url('images.jpeg');
+}
+
+/* header paralax image image*/
+header {
+  background: url('image.png');
+  text-align: center;
+  width: 100%;
+  height: auto;
   background-size: cover;
-}
-
-.footer{
-  background-color: black;
-  color: white;
-  padding: 30px;
-  display: flex;
-
-}
-
-.middle{
-
-  text-align: center;
+  background-attachment: fixed;  /* paralax effect*/
   position: relative;
-  opacity: 0.5;
-  transform: translate(10px);
-  font: MonoLisa;
-  font-size: 100%;
- 
-
-}
-
-.b{
   
-  background-color: black ;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 0 0 85% 85% / 30%;
+}
+
+/* header text*/
+header .all{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color:  black;
+}
+
+/* header image text*/
+h1 {
+  font-family: 'Brush Script MT';
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+
+pre{
+  font-size:  15px;
+}
+
+/* button css e*/
+button {
+  padding:  10px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+button:hover{
+  cursor: pointer;
+}
+
+/* header*/
+
+.start{
+  background-color:  #C1ADAE;
+  overflow: hidden;
+}
+
+.start a {
+  float: right;
+  color: black;
+  padding: 16px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.start a:hover {
+  background-color: #ddd;
+}
+
+
+/* footer*/
+
+.footer {
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #C1ADAE;
+  color: black;
   text-align: center;
-  font-size: 45px;
-  font-family: MonoLisa;
-  align-content: center;
-
+  overflow: hidden;
 
 }
 
-.c{
-  color: white;
+.footer a {
+  
+  float: left;
+  color: black;
+  padding: 16px;
+  font-size: 15px;
+  text-decoration: none;
+  text-decoration-color: none ;
+
+}
+
+.f{
+   float: right;
+  padding: 16px;
+  font-size: 10px;
+  text-decoration: none;
+  text-decoration-color: none ;
+  color: black;
+
+}
+
+/*/////////////scroll button /////////*/
+
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 10px;
+  cursor: pointer;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.3s;
+  display: block;
+}
+
+.showScrollBtn {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 
-.image1 {
-        width: 200px;
-        height: 105px;
-        background: url("image3.png") ;
-        margin: 50px;
-    }
-.image2:hover {
-        background: url("image2.png") ;
-    }
-
-
-.cast{
-  font-family: MonoLisa;
-  font-size: 22px;
+html {
+  scroll-behavior: smooth;
 }
-
-
-
-
-
-
-

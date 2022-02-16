@@ -1,0 +1,71 @@
+.parallax {
+  background-image: url("image.png");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+
+  background-size: cover;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  padding: 30px;
+  display: flex;
+
+}
+
+.middle{
+
+  text-align: center;
+  position: relative;
+  opacity: 0.5;
+  transform: translate(10px);
+  font: MonoLisa;
+  font-size: 100%;
+ 
+
+}
+
+.b{
+  
+  background-color: black ;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 45px;
+  font-family: MonoLisa;
+  align-content: center;
+
+
+}
+
+.c{
+  color: white;
+}
+
+
+.image1 {
+        width: 200px;
+        height: 105px;
+        background: url("image3.png") ;
+        margin: 50px;
+    }
+.image2:hover {
+        background: url("image2.png") ;
+    }
+
+
+.cast{
+  font-family: MonoLisa;
+  font-size: 22px;
+}
+
+
+
+
+
+
+
